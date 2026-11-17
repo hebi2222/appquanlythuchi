@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/formFields"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtTitle"
+        android:text="Tiêu đề"
+        android:textColor="#263B24"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Ví dụ: Học Java"
+        android:inputType="textCapSentences"
+        android:maxLength="100"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:labelFor="@+id/edtContent"
+        android:text="Nội dung"
+        android:textColor="#263B24"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@id/edtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:gravity="top|start"
+        android:hint="Ví dụ: Ôn tập RecyclerView và AlertDialog"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLength="1000"
+        android:minLines="2"
+        android:maxLines="4"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:labelFor="@+id/edtDate"
+        android:text="Ngày thực hiện"
+        android:textColor="#263B24"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@id/edtDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Bấm để chọn ngày"
+        android:clickable="true"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:inputType="none"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:labelFor="@+id/edtType"
+        android:text="Mức độ công việc"
+        android:textColor="#263B24"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@id/edtType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Bấm để chọn mức độ"
+        android:clickable="true"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:inputType="none"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+</LinearLayout>

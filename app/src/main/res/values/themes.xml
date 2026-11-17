@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Quanlythuchi" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#0F766E</item>
+        <item name="colorPrimaryDark">#115E59</item>
+        <item name="colorAccent">#0F766E</item>
+
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">#F3F6F7</item>
+        <item name="android:statusBarColor">#F3F6F7</item>
+        <item name="android:navigationBarColor">#F3F6F7</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+
+        <item name="android:textColor">#253B48</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Field">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:minHeight">50dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/bg_field</item>
+
+        <item name="android:textColor">#172C3A</item>
+        <item name="android:textColorHint">#6C7C86</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:minHeight">52dp</item>
+        <item name="android:backgroundTint">#0F766E</item>
+
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SecondaryButton" parent="PrimaryButton">
+        <item name="android:backgroundTint">#E1F0ED</item>
+        <item name="android:textColor">#115E59</item>
+    </style>
+
+</resources>

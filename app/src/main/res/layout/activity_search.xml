@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        style="@style/Label"
+        android:text="Loại giao dịch"
+        android:labelFor="@+id/spType" />
+
+    <Spinner
+        android:id="@id/spType"
+        style="@style/Field"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        style="@style/Label"
+        android:text="Mã giao dịch"
+        android:labelFor="@+id/edtCode" />
+
+    <EditText
+        android:id="@id/edtCode"
+        style="@style/Field"
+        android:hint="GD000001 hoặc 1; để trống để xem tất cả"
+        android:inputType="textCapCharacters"
+        android:maxLength="21"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnFind"
+        style="@style/PrimaryButton"
+        android:layout_marginTop="12dp"
+        android:text="Tìm kiếm" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/Label"
+        android:text="Đang tải…" />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center"
+        android:text="Không có giao dịch khớp với điều kiện tìm kiếm."
+        android:textColor="#6C7C86"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/Label"
+            android:text="Thống kê theo tháng hoặc cả năm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spMonth"
+                style="@style/Field"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:contentDescription="Tháng thống kê"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/edtYear"
+                style="@style/Field"
+                android:layout_width="100dp"
+                android:layout_marginStart="10dp"
+                android:hint="Năm"
+                android:contentDescription="Năm thống kê"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnApply"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="12dp"
+            android:text="Xem thống kê" />
+
+        <TextView
+            android:id="@+id/tvPeriod"
+            style="@style/Label"
+            android:text="Đang tải…" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/Label"
+                android:text="Tổng thu"
+                android:textColor="#0F766E" />
+
+            <TextView
+                android:id="@+id/tvIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:textColor="#0F766E"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Label"
+                android:text="Tổng chi"
+                android:textColor="#C65035" />
+
+            <TextView
+                android:id="@+id/tvExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:textColor="#C65035"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                style="@style/Label"
+                android:text="Chênh lệch: —" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Label"
+            android:text="Theo phân loại"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Độ dài thanh thể hiện tỷ trọng trong tổng tiền thu và chi của kỳ."
+            android:textColor="#6C7C86"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/categoryRows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
